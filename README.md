@@ -1,6 +1,4 @@
-===============
-pylibics module
-===============
+# pylibics module
 
 Python interface to libics (Image Cytometry Standard). The files in the
 directories 'libics-1.5.2' are from libics
@@ -13,9 +11,7 @@ files provided there.
 After compiling libics you are ready to compile the python wrapper pylibics.
 The instructions for Windows and Linux are given below.
 
-=====
-Linux
-=====
+## Linux
 
 To compile the python wrapper pylibics you will need
 
@@ -31,7 +27,6 @@ Moreover, pylibics depends on the python packages
 which you have to have installed too.
 
 1) Compiling the python wrapper
--------------------------------
 
 Start the compilation by calling
 
@@ -40,7 +35,6 @@ Start the compilation by calling
  > make
 
 2) Installing the python wrapper with distutils/setuptools
-----------------------------------------------------------
 
 and then install the package in the development mode by calling
 
@@ -54,9 +48,7 @@ which you then can install with the command
 
  > easy_install dist/<name of the genareted egg file>
 
-=======
-Windows
-=======
+## Windows
 
 To compile pylibics under Windows you need
 
@@ -66,7 +58,6 @@ To compile pylibics under Windows you need
  - numpy (included in PythonXY)
 
 1) Compiling the python wrapper
--------------------------------
 
 To compile this project you need to set up the following environment variables:
 
@@ -80,7 +71,6 @@ After compilation the output is a pylibics module in the 'pylibics' folder.
 You will most likely want install this module with distutils. (see 2)
 
 2) Installing the python wrapper with distutils/setuptools
-----------------------------------------------------------
 
 Open a command line window and go to the python folder of the libics module.
 To install the python module in development mode run

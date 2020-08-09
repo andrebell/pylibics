@@ -61,10 +61,10 @@ To compile pylibics under Windows you need
 
 To compile this project you need to set up the following environment variables:
 
-PYTHON_INC <- must point to the folder with the python includes
-NUMPY_INC <- must point to the folder with the numpy python extension includes
-PYTHON_LIB <- must point to the folder with the python lib files
-SWIG <- Full specifier (incl. the path) to the swig.exe
+- PYTHON_INC <- must point to the folder with the python includes
+- NUMPY_INC <- must point to the folder with the numpy python extension includes
+- PYTHON_LIB <- must point to the folder with the python lib files
+- SWIG <- Full specifier (incl. the path) to the swig.exe
 
 Open the Visual Studio solution file in Visual Studio and compile the project.
 After compilation the output is a pylibics module in the 'pylibics' folder.
@@ -75,15 +75,15 @@ You will most likely want install this module with distutils. (see 2)
 Open a command line window and go to the python folder of the libics module.
 To install the python module in development mode run
 
- python setup.py develop
+ > python setup.py develop
 
 and to compile a python egg, which can be copied to the python installations
 lib\site-packages folder, run
 
- python setup.py bdist_egg
+ > python setup.py bdist_egg
 
 The egg file will be in the python\dist subfolder.
 You can install the egg with the command
 
- easy_install dist\<name of the genareted egg file>
+ > easy_install dist\<name of the genareted egg file>
 

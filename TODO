@@ -1,0 +1,10 @@
+TODO:
+
+ - Implement wrapper for IcsGetROIData
+ - Implement wrapper for IcsGetDataWithStrides
+ - Implement wrapper for IcsGetDataBlock
+ - Implement wrapper for IcsSetDataWithStrides
+ - Implement wrapper for IcsSetSource
+ - Implement a type check for the passed in numpy.ndarray object
+ - Add further function documentations as python doc strings
+

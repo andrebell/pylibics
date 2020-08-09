@@ -1,0 +1,100 @@
+Metadata-Version: 1.0
+Name: pylibics
+Version: 1.5.2b1
+Summary: Python wrapper for libics (Image Cytometry Standard).
+Home-page: http://www.andre-bell.de/en/projects/pylibics
+Author: Andre Alexander Bell
+Author-email: pylibics@andre-bell.de
+License: BSD
+Download-URL: http://www.andre-bell.de/en/projects/pylibics/downloads
+Description: 
+        =============================
+        Installing and Using pylibics
+        =============================
+        
+        .. contents:: **Table of Contents**
+        
+        ------------
+        Introduction
+        ------------
+        
+        The Image Cytometry Standard (ICS) is a file format for images, primarily in
+        microscopy imaging. The file format has been described by `Dean1990`_. ICS
+        files allow to store further information on the imaging system along with the
+        actual image (e.g aperture, light setting, microscope, and camera). Moreover,
+        the file format allows to store several integer format, floating point images as
+        well as complex valued images.
+        
+        The library `libics`_ is a C library to read an write ICS image files. This
+        module wraps the functions provided by libics to Python. Actual image data are
+        returned as numpy arrays. Numpy array in turn can be written to ICS image files.
+        
+        .. _Dean1990: Dean, P.; Mascio, L.; Ow, D.; Sudar, D. & Mullikin, J.
+            'Proposed standard for image cytometry data files'
+            Cytometry, Part A, 1990, 11, (5), 561-569
+            doi: 10.1002/cyto.990110502
+        .. _libics: http://libics.sourceforge.net
+        
+        Limitations and known bugs
+        --------------------------
+        
+         - Ics data written as version 2.0 is broken
+         - Accessing ics history entries with the iterator interface
+           seems not to work properly
+         - Compression appears to be not working
+        
+        -------------------------
+        Installation instructions
+        -------------------------
+        
+        You can download the `source code package`_ to compile everything yourself or
+        you can use easy_install to install the precompiled package (py2.6, win32 and
+        linux, x86_64). To compile the package please follow the instructions provided
+        in the README file.
+        
+        Windows
+        -------
+        
+        Installing with easy_install is done by calling from the windows command
+        prompt (C:\>):
+        
+          C:\> easy_install pylibics
+        
+        Linux
+        -----
+        
+        Installing with easy_install is done by calling from the command prompt:
+        
+          > easy_install pylibics
+        
+        .. _source code package: http://www.andre-bell.de/projects/pylibics/downloads
+        
+        -----
+        Usage
+        -----
+        
+        Please see the `project homepage`_ for usage examples. Also refer to the
+        examples provided in the source package.
+        
+        .. _project homepage: http://www.andre-bell.de/projects/pylibics
+        
+        ---------------
+        Release Changes
+        ---------------
+        
+        1.5.2b1, Released 2010-11-23
+         * Basic support for libics
+        
+Keywords: libics,Image Cytometry Standard,ICS,IDS,image file format
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Software Development :: Libraries

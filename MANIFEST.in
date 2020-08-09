@@ -1,0 +1,4 @@
+prune dist
+exclude pylibics/*.dll
+exclude pylibics/*.pyd
+exclude pylibics/*.so

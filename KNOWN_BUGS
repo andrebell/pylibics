@@ -1,0 +1,9 @@
+Known Bugs
+==========
+
+ - Ics data written as version 2.0 is broken
+   (Stick with 'w1' for now)
+ - Accessing ics history entries with the iterator interface
+   seems not to work properly
+ - Compression appears to be not working
+
